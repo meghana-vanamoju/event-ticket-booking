@@ -1,0 +1,218 @@
+/* GENERAL */
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background:#f5f7fb;
+color:#333;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+
+/* HEADER */
+
+header{
+background:#1e1e2f;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+}
+
+header h1{
+margin:0;
+color:#ff4b5c;
+}
+
+nav a{
+color:white;
+margin-left:25px;
+text-decoration:none;
+font-weight:600;
+}
+
+nav a:hover{
+color:#ff4b5c;
+}
+
+
+/* HERO SECTION */
+
+.hero{
+height:400px;
+background:linear-gradient(to right,#1e1e2f,#2d2d44);
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h2{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:25px;
+}
+
+.explore-btn{
+background:#ff4b5c;
+color:white;
+padding:12px 25px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.explore-btn:hover{
+background:#ff2a3f;
+}
+
+
+/* EVENTS SECTION */
+
+.events{
+padding:60px 40px;
+text-align:center;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:40px;
+color:#1e1e2f;
+}
+
+.event-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+
+/* EVENT CARDS */
+
+.card{
+background:white;
+width:260px;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+transition:transform 0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+.card h3{
+margin:15px 0 5px 0;
+}
+
+.card p{
+margin:5px 0;
+}
+
+
+/* BUTTONS */
+
+button{
+margin-top:10px;
+padding:10px 15px;
+border:none;
+border-radius:5px;
+background:#ff4b5c;
+color:white;
+cursor:pointer;
+font-weight:600;
+}
+
+button:hover{
+background:#ff2a3f;
+}
+
+
+/* EVENT DETAILS */
+
+.details{
+display:none;
+padding:10px;
+font-size:14px;
+color:#444;
+}
+
+
+/* BOOKING SECTION */
+
+.booking{
+background:#ffffff;
+padding:60px 20px;
+text-align:center;
+}
+
+.booking form{
+background:#f1f3f8;
+padding:30px;
+display:inline-block;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+input, select{
+width:250px;
+padding:10px;
+border-radius:5px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+
+/* FOOTER */
+
+footer{
+background:#1e1e2f;
+color:white;
+text-align:center;
+padding:40px 20px;
+margin-top:40px;
+}
+
+footer h3{
+color:#ff4b5c;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:10px;
+}
+
+.event-container{
+flex-direction:column;
+align-items:center;
+}
+
+.hero h2{
+font-size:28px;
+}
+
+}
